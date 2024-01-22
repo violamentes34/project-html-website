@@ -1,0 +1,14 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main  # or the branch you want to trigger on
+
+pool:
+  vmImage: 'windows-latest'  # or your preferred agent
+
+steps:
+- script: echo 'Hello, World!'
+  displayName: 'Run a one-line script'
